@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="loginapp.registrogrid">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="200" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView Grid.ColumnSpan="2" />
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_TV_2015.svg/300px-Logo_TV_2015.svg.png" WidthRequest="100" HeightRequest="100" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.ColumnSpan="2"/>
+
+
+            <BoxView Grid.Row="1"
+                  
+                 Grid.ColumnSpan="2"/>
+            <StackLayout Grid.Row="1"  Grid.ColumnSpan="2"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center" >
+                <Entry Placeholder="Correo" Margin="100,0,100,20" HorizontalOptions="FillAndExpand" TextColor="White" PlaceholderColor="LightGray"/>
+                <Entry Placeholder="Contraseña" Margin="100,0,100,20" HorizontalOptions="FillAndExpand" IsPassword="True" TextColor="White" PlaceholderColor="LightGray" />
+                <Button Text="Ingresar" Margin="100,0,100,20" BackgroundColor="Transparent" BorderWidth="2" BorderColor="LightGray"></Button>
+                <Button Text="Registrarse" Margin="100,0" BackgroundColor="Transparent" BorderWidth="2" BorderColor="LightGray"></Button>
+            </StackLayout>
+
+
+            <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 />
+            <Label Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Text="¿Olvidaste tu contraseña?"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
